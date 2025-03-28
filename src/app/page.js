@@ -621,7 +621,7 @@ const MansionCombatTracker = () => {
     // URL do servidor WebSocket (hospedado no Render)
     const WEBSOCKET_URL =
       process.env.NODE_ENV === "production"
-        ? "wss://mansao-das-sombras-ws.onrender.com" // Substitua pelo URL real do seu servidor no Render
+        ? "https://turn-tracker-1.onrender.com" // Substitua pelo URL real do seu servidor no Render
         : "ws://localhost:3001";
 
     console.log(`Conectando ao servidor WebSocket: ${WEBSOCKET_URL}`);
