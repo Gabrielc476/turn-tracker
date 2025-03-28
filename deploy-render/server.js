@@ -25,11 +25,9 @@ app.use((req, res, next) => {
   next();
 });
 
-// Servir arquivos estáticos (quando fizer o build do React)
-app.use(express.static(path.join(__dirname, "build")));
-
+// Rota básica para verificar se o servidor está funcionando
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.send("Servidor WebSocket da Mansão das Sombras está funcionando!");
 });
 
 // Criar um ID de sessão único para cada nova sessão
